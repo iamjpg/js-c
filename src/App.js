@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import cn from 'classnames';
+import { CoinContainer } from './components/CoinContainer';
+import { LandingPad } from './components/LandingPad';
+import { mainContainer } from './css-modules/Layout.module.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className={cn('container', mainContainer)}>
+        <div className='row'>
+          <div className='twelve columns'>
+            <CoinContainer />
+            <LandingPad />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
