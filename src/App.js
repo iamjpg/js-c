@@ -7,18 +7,18 @@ import { mainContainer } from './css-modules/Layout.module.css';
 // https://api.coingecko.com/api/v3/coins/dogecoin
 
 function App() {
-  const testFetch = () => {
-    fetch('https://api.coingecko.com/api/v3/coins/dogecoin')
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        console.log(data);
-      })
-      .catch(function (err) {
-        console.warn('Something went wrong.', err);
-      });
-  };
+  // const testFetch = () => {
+  //   fetch('https://api.coingecko.com/api/v3/coins/dogecoin')
+  //     .then(function (response) {
+  //       return response.json();
+  //     })
+  //     .then(function (data) {
+  //       console.log(data);
+  //     })
+  //     .catch(function (err) {
+  //       console.warn('Something went wrong.', err);
+  //     });
+  // };
 
   useEffect(() => {
     // testFetch();
@@ -28,7 +28,7 @@ function App() {
     <>
       <div className={cn('container', mainContainer)}>
         <div className='row'>
-          <h1>Bitcoin Drag n' Drop</h1>
+          <h1>Crypto Drag n' Drop</h1>
           <p>
             Step right up and drag a crypto-currency to the landing pad to
             return data!
