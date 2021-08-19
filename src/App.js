@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import cn from 'classnames';
 import { CoinContainer } from './components/CoinContainer';
-import { LandingPad } from './components/LandingPad';
+import LandingPad from './components/LandingPad';
 import { mainContainer } from './css-modules/Layout.module.css';
 
 // https://api.coingecko.com/api/v3/coins/dogecoin
