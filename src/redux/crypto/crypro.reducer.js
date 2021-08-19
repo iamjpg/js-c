@@ -1,7 +1,7 @@
 import { UPDATE_CRYPTO } from './crypto.types';
 
 const initialState = {
-  name: 'popp',
+  name: null,
   description: null,
   images: [],
   homepageUrl: null,

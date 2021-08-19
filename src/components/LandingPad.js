@@ -2,7 +2,9 @@ import { connect } from 'react-redux';
 import { container, headline } from '../css-modules/LandingPad.module.css';
 
 const NoResults = () => {
-  return <div>Please drag a crypto coin to return data.</div>;
+  return (
+    <div>Please drag a crypto coin into this container to return data.</div>
+  );
 };
 
 const DisplayCryptoResults = (props) => {
