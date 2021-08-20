@@ -7,3 +7,11 @@
   align-items: center;
   align-content: center;
 }
+
+.container img {
+  cursor: grab;
+}
+
+.container img:active {
+  cursor: grabbing;
+}

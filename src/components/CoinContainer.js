@@ -6,7 +6,7 @@ import StellarLogo from '../static/svg/xlm.png';
 import XrpLogo from '../static/svg/xrp.png';
 import DogeLogo from '../static/svg/doge.png';
 
-export const CoinContainer = () => {
+const CoinContainer = () => {
   return (
     <>
       <div className={container}>
@@ -19,3 +19,5 @@ export const CoinContainer = () => {
     </>
   );
 };
+
+export default CoinContainer;
