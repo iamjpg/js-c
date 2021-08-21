@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Welcome to the Crypto Drag n' Drop Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Intro
 
-## Available Scripts
+This challenge is a pre-stubbed out ReactJS application. The goal of the challenge is to update the user interface to display information about the corresponding crypto currency coin when dragged and dropped into the landing zone as illustrated by the image below.
 
-In the project directory, you can run:
+![Challenge example](https://i.imgur.com/jb0PwDy.mp4)
 
-### `yarn start`
+The site has been stubbed out for you. The two components you'll primarily be working with are the `CoinContainer.js` and `LandingPad.js` located in `src/components`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+They have corresponding CSS Module files available if you feel like updating styles (located in `src/css-modules`).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Lastly, Redux has been stubbed out in this implementation. While you could use React Hooks to implement this interface, we'd like for you to use Redux as your state. Located in `src/redux`.
 
-### `yarn test`
+## Directions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**_Please don't install and use any drag and drop libraries or currency formatting libraries. We wish for you to implement those behaviors natively in the app._**
 
-### `yarn build`
+Fork and clone this repository.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+After cloning, in your local directory run `yarn install` and then `yarn start` to begin your development environment.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Inside the `src/redux/crypto.reducer.js` file you'll notice that the applications `initial state` has been set for you. This will inform you to what items are expected to be in the dropzone view after the coin is dropped.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Where Are We Getting The Data?
 
-### `yarn eject`
+We'll be obtaining this data from the CoinGecko API. Here is the call you'll be making to return data:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+https://api.coingecko.com/api/v3/coins/<COIN_ID>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The coins you'll be working with are the following with their IDs in parenthesis.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Coin    | ID      |
+| ------- | ------- |
+| Bitcoin | bitcoin |
+| Ether   |         |
