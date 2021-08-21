@@ -6,7 +6,7 @@ import { mainContainer } from './css-modules/Layout.module.css';
 function App() {
   return (
     <>
-      <div className={cn('container', mainContainer)}>
+      <section className={cn('container', mainContainer)}>
         <div className='row'>
           <h1>Crypto Drag n' Drop</h1>
           <p>
@@ -18,7 +18,7 @@ function App() {
             <LandingPad />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
