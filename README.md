@@ -4,9 +4,7 @@
 
 This challenge is a pre-stubbed out ReactJS application. The goal of the challenge is to update the user interface to display information about the corresponding crypto currency coin when dragged and dropped into the landing zone as illustrated by the image below.
 
-<video width="320" height="240" controls>
-  <source src="https://i.imgur.com/jb0PwDy.mp4" type="video/mp4">
-</video>
+![Challenge example](./challenge.gif)
 
 The site has been stubbed out for you. The two components you'll primarily be working with are the `CoinContainer.js` and `LandingPad.js` located in `src/components`.
 
