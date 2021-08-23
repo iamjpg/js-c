@@ -10,7 +10,7 @@ The site has been stubbed out for you. The two components you'll primarily be wo
 
 They have corresponding CSS Module files available if you feel like updating styles (located in `src/css-modules`).
 
-Lastly, Redux has been stubbed out in this implementation. While you could use React Hooks to implement this interface, we'd like for you to use Redux as your state. All neccessary files have been stubbed in `src/redux`.
+Lastly, Redux has been stubbed out in this implementation. While you could use React Hooks to implement this interface, we'd like for you to use Redux as your state/store. All neccessary files have been stubbed in `src/redux`.
 
 ## Directions
 
@@ -24,7 +24,7 @@ Inside the `src/redux/crypto.reducer.js` file you'll notice that the application
 
 ## Where Are We Getting The Data?
 
-We'll be obtaining this data from the CoinGecko API. Here is the call you'll be making to return data:
+We'll be obtaining this data from the CoinGecko API. Using `fetch`, here is the call you'll be making to return data:
 
 https://api.coingecko.com/api/v3/coins/<COIN_ID>
 
